@@ -1,0 +1,84 @@
+* {box-sizing: border-box;}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+nav { width: 100%;
+      background: #ccc;
+      padding:20px;
+      font-family: georgia, sans-serif;
+      font-size: 25px;
+      text-align: left;
+     }
+ nav ul {list-style:none;
+         margin:-20px;padding:5px;
+        } 
+ nav ul li { display:inline-block }
+    
+ nav ul li a {font-size: 0.95em;text-decoration: none;color: #FFF;padding: 4px 10px }
+    
+ /*nav ul li a:hover { background-color: #87CEEB }*/
+    
+ h1 {background-color: grey;
+     margin: 0;
+     padding: 15px;
+     text-align: left;
+     font-family: georgia,sans-serif;
+     font-size: 35px;
+     }    
+
+    /* Style the header */
+ header { background-color: #666;
+          padding: 10px;
+          text-align: center;
+          font-size: 30px;
+          color: white;
+        }
+
+    /* Cria 2 columnas/caixas que flutuam uma proximo da outra */
+ h3 { float: left;
+      margin: 0;
+      width: 30%;
+      height: 300px; 
+      background: #ccc;
+      padding:100px;
+      font-family: georgia, sans-serif;
+      font-size: 25px;
+      text-align: center;
+    }
+            
+  p  { font-family: georgia;
+      font-size: 20px;
+     }
+
+  article {float: left;
+           padding: 20px;
+           width: 70%;
+           background-color: #f1f1f1;
+           height: 300px; /* only for demonstration, should be removed */
+           }
+    
+  table, th, td {border: 1px solid black;
+                 border-collapse: collapse;
+                }
+    th, td {padding: 3px;}
+    th {text-align: left;}
+
+    /* Clear floats after the columns */
+  section:after { content: "";
+                display: table;
+                clear: both;
+                }
+
+    /* Style the footer */
+   footer {background-color: #777;
+           padding: 10px;
+           text-align: center;
+           color: white;
+           font-size: 5px;
+           }
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+                               nav, article {width: 100%;
+                                             height: auto;
+                                            }
+                              }
